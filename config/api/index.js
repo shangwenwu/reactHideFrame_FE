@@ -4,4 +4,4 @@ let Api = {
     getinfo: rootUrl + 'foundation/userrequest/getinfo'
 };
 
-module.exports = Api;
+module.exports = window.Api;

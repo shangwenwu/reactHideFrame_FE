@@ -5,7 +5,7 @@ var args = require('node-args');
 
 var config = {
     entry: {
-        build: './index.js'
+        frameJs: './index.js'
     },
     output: {
         path: path.join(__dirname, '/assets/script'),

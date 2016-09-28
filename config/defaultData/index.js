@@ -11,4 +11,4 @@ let defaultData = {
 
 };
 
-module.exports = defaultData;
+module.exports = window.defaultData;
