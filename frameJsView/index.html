@@ -8,11 +8,10 @@
 <body>
 
     <script type="text/javascript"  src="assets/script/handlebars.min.js"></script>
-    
     <script type="text/javascript"  src="assets/script/jquery.min.js"></script>
-    <script type="text/javascript"  src="assets/script/defineComponent.js"></script>
     <script type="text/javascript"  src="assets/script/ys.min.js"></script>
     <script type="text/javascript"  src="assets/script/require.js"></script>
+    
     
     <script type="text/javascript">
         //默认数据、api、及html中注释的handlebars、require.js开启
@@ -24,7 +23,7 @@
             //引入虚拟数据  注：该文件可配置是否采用请求或提取虚拟数据
             require(['./conf/defaultData']);
 
-            //引入路由页面文件，及路由配置
+            // 引入路由页面文件，及路由配置
             require([
                     './page/nav/index',
                     './page/home/index',
@@ -41,7 +40,7 @@
                         component: nav,
                         default: home,
                         subRouter: [{
-                                path: "/test",
+                                path: "/subTest",
                                 component: test
                             },{
                                 path: "/subArea",
@@ -58,6 +57,9 @@
                     }]
                     Entry(RouterConfig(config));
             });
+
+
+                    
         }
     </script>
 

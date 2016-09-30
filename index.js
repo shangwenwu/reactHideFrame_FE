@@ -5,4 +5,4 @@ let RouterConfig = require('./coreSource/createRouter');
 let Entry = require('./coreSource/createEntry');
 // Entry(RouterConfig)
 
-window.frameInit(Entry, RouterConfig, Handlebars);
+window.frameInit(Entry, RouterConfig);

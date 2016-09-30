@@ -11,10 +11,10 @@ defineComponent(function(html) {
                 alert(11)
             });
 
-            //插入组件
-            require(['./page/subArea1/index'], function(con) {
-                Root.append('con', con);
-            })
+            // //插入组件
+            // require(['./page/subArea1/index'], function(con) {
+            //     Root.append('con', con);
+            // })
 
             var data = {
                 "student": [{

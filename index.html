@@ -24,16 +24,77 @@
             //引入虚拟数据  注：该文件可配置是否采用请求或提取虚拟数据
             require(['./conf/defaultData']);
 
-            //引入路由页面文件，及路由配置
-            require([
-                    './page/nav/index',
-                    './page/home/index',
-                    './page/test/index',
-                    './page/subHome/index',
-                    './page/subArea/index',
-                    './page/subArea1/index'
-                    ],function(nav,home,test,subHome,subArea,subArea1){
+            // var files = [
+            //         './page/nav/index',//nav
+            //         './page/home/index',//home
+            //         './page/test/index',//test
+            //         './page/subArea/index',//subArea
+            //         './page/subHome/index',//subHome
+            //         './page/subArea1/index'//subArea1
+            //     ];
 
+            // var pathName = {
+            //     '/':[0,1],
+            //     "/test":[0,2],
+            //     "/subArea":[0,3,4],
+            //     "/subArea1":[0,3,5],
+            //     "/test11":[2]
+            // };
+
+            // var filePath = [];
+            // hashHistory.listen(function(location) {
+
+            //     if(pathName[location.pathname]){
+            //         pathName[location.pathname].map((item,key)=>{
+            //             files.map((i,k)=>{
+            //                 if(k == item){
+            //                     filePath[k] = i
+            //                 }else{
+            //                     if(!filePath[k]) filePath[k] = ''
+            //                 }
+            //             })
+            //         })
+            //     };
+
+            //     require(filePath,function(nav,home,test,subArea,subHome,subArea1){
+
+            //             //路由配置
+            //             var config = [{
+            //                 path: '/',
+            //                 component: nav,
+            //                 default: home,
+            //                 subRouter: [{
+            //                         path: "/test",
+            //                         component: test
+            //                     },{
+            //                         path: "/subArea",
+            //                         component: subArea,
+            //                         default: subHome,
+            //                         subRouter:[{
+            //                             path: "/subArea1",
+            //                             component: subArea1,
+            //                         }]
+            //                     }]
+            //             },{
+            //                 path: "/test11",
+            //                 component: test
+            //             }]
+            //             Entry(RouterConfig(config));
+            //     });
+
+
+            // });
+
+
+
+            require([
+                    './page/nav/index',//nav
+                    './page/home/index',//home
+                    './page/test/index',//test
+                    './page/subArea/index',//subArea
+                    './page/subHome/index',//subHome
+                    './page/subArea1/index'//subArea1
+                ],function(nav,home,test,subArea,subHome,subArea1){
 
                     //路由配置
                     var config = [{
@@ -58,6 +119,8 @@
                     }]
                     Entry(RouterConfig(config));
             });
+
+            
         }
     </script>
 
